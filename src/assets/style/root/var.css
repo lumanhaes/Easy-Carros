@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+
+    /* Main */
+    --radius-geral: 1rem;
+    --font-family: 'Roboto', 'Open Sans', sans-serif;
+
+    /* Nav */
+    --text-size-nav: 1.4rem;
+    --text-color-nav: #000000;
+    --font-weight-nav: 400;
+
+    /* Title */
+    --text-size-title: 3vw;
+    --text-color-title: #FFF;
+    --text-shadow-title: 0px 4px 4px rgb(36, 34, 34);
+
+    /* Button */
+    --text-size-btn: 1.6rem;
+
+    /* Background */
+    --bg-color: #EDF3FC;
+    --bg-color-secondary: #FFFFFF;
+
+    /* Button */
+    --btn-color: #0ADBC6;
+    --text-color-btn: #FFFFFF;
+    --font-weight-btn: 600;
+    
+}

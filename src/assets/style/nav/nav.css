@@ -1,0 +1,41 @@
+@import url(/src/assets/style/css/root/var.css);
+
+.navbar {
+    background-color: var(--bg-color-secondary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0.5px 0.3px 5px #1d1c1c57
+}
+
+.navbar-lista{
+    list-style-type: none;
+    display: flex;
+    padding: 1rem 0 1rem 0;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.item-lista{
+    text-decoration: none;
+    font-size: var(--text-size-nav);
+    color: var(--text-color-nav);
+    font-weight: var(--font-weight-nav);
+}
+
+.item-lista:hover{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+}
+
+.botao-cadastro{
+    background-color: var(--btn-color);
+    border-radius: var(--radius-geral);
+    padding: 0.8rem 1rem 0.8rem;
+    font-weight: var(--font-wegth-btn);
+    color: var(--text-color-btn);
+}

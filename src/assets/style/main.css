@@ -1,0 +1,11 @@
+@import url(root/var.css);
+html{font-size: 62.5%;}
+body{font-size: 1.6rem; width: 100%; background-color: var(--bg-color);}
+*{
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
