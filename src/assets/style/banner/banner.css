@@ -1,37 +1,25 @@
 @import url(/src/assets/style/css/root/var.css);
 
 .banner-pesquisa{
-    width: 80%;
+    width: 92%;
     margin: 0 auto;
 }
 
 .banner-title{
     position: absolute;
-    top: 9rem;
-    margin: 1vw 6vw;
+    top: 12vh;
+    margin: 3vh 10vw 0;
     font-size: var(--text-size-title);
     color: var(--text-color-title);
     text-shadow: var(--text-shadow-title);
+
 }
 
 .banner-img{
-
-    width: 80vw;
-    margin: 8rem auto 0;
+    width: 92vw;
+    margin: 7rem auto 0;
     border-radius: var(--radius-geral);
 }
 
-.pesquisa{
-    position: relative;
-    bottom: 3rem;
-    height: 5rem;
-    margin: auto 12%;
-    background-color: var(--bg-color-secondary);
-    border-radius: var(--radius-geral);
-    box-shadow: 0.5px 0.3px 5px #1d1c1c57
-}
 
-.lista-pesquisa{
-    display: flex;
-}
 

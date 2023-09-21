@@ -1,0 +1,62 @@
+.produtos{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.title-produtos{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.container-produtos-recomendados{
+    width: 80vw;
+    margin: 2rem 1rem 0;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+}
+
+.container-itens{
+    background-color: var(--bg-color-secondary);
+    border-radius: var(--radius-geral);
+    box-shadow: var(--shadow-geral);
+    height: 25rem;
+    margin: 0.7rem;
+    padding: 1.5rem;
+}
+
+.item-01{
+    width: 50px;
+    height: 50px;
+    background-image: url(../../img/logomarcas/Fiat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-02{
+    width: 50px;
+    height: 50px;
+    background-image: url(../../img/logomarcas/Pegeut.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-03{
+    width: 50px;
+    height: 50px;
+    background-image: url(../../img/logomarcas/Renault.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-04{
+    width: 50px;
+    height: 50px;
+    background-image: url(../../img/logomarcas/Volkswagen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

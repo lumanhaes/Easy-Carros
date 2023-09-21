@@ -5,6 +5,7 @@
 
     /* Main */
     --radius-geral: 1rem;
+    --shadow-geral: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --font-family: 'Roboto', 'Open Sans', sans-serif;
 
     /* Nav */
@@ -17,16 +18,16 @@
     --text-color-title: #FFF;
     --text-shadow-title: 0px 4px 4px rgb(36, 34, 34);
 
-    /* Button */
-    --text-size-btn: 1.6rem;
-
     /* Background */
     --bg-color: #EDF3FC;
     --bg-color-secondary: #FFFFFF;
 
     /* Button */
+    --text-size-btn: 1.6rem;
     --btn-color: #0ADBC6;
     --text-color-btn: #FFFFFF;
     --font-weight-btn: 600;
-    
+
+    /* Footer */
+    --bg-color-footer: #31425a;
 }

@@ -1,0 +1,43 @@
+.pesquisa{
+    position: relative;
+    bottom: 3rem;
+    left: 0.7rem;
+    height: 5rem;
+    width: 80vw;
+    margin: 0 auto;
+    background-color: var(--bg-color-secondary);
+    border-radius: var(--radius-geral);
+    box-shadow: 0.5px 0.3px 5px #1d1c1c57
+}
+
+.lista-pesquisa{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+.pesquisa-categoria-01{
+    display: flex;
+}
+
+.pesquisa-categoria-02{
+    display: flex;
+}
+
+.pesquisa-categoria-03{
+    display: flex;
+}
+
+.icone-categoria{
+    margin: 0 1rem 0 1rem;
+}
+
+.icone-calendario{
+    margin: 0 3rem;
+}
+
+.icone-pesquisa{
+    margin: 0 1rem 0 2rem;
+}

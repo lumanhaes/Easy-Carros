@@ -3,41 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logos/Favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/style/main.css">
     <link rel="stylesheet" href="assets/style/nav/nav.css">
     <link rel="stylesheet" href="assets/style/banner/banner.css">
+    <link rel="stylesheet" href="assets/style/search/search.css">
+    <link rel="stylesheet" href="assets/style/products/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Easy Carros</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <ul class="navbar-lista">
-                <img src="assets/img/Logo/Logo-01.png" class="item-lista item-lista-imagem"></img>
-                <a href="#" class="item-lista">Inicio</a>
-                <a href="#" class="item-lista">Categorias</a>
-                <a href="#" class="item-lista">Contato</a>
-                <a href="#" class="item-lista">Sobre</a>
-                <a href="#" class="item-lista botao-cadastro">Cadastre-se</a>
+                <img src="assets/img/logos/Logo-01.png" class="item-lista item-lista-imagem"></img>
+                <a href="#" class="item-lista item-lista-01">Inicio</a>
+                <a href="#" class="item-lista item-lista-02">Categorias</a>
+                <a href="#" class="item-lista item-lista-03">Contato</a>
+                <a href="#" class="item-lista item-lista-04">Sobre</a>
+                <a href="#" class="item-lista botao-cadastro item-lista-05">Cadastre-se</a>
             </ul>
         </nav>
     </header>
     <main>
         <section class="banner-pesquisa">
-            <img src="assets/img/banners/02.png" alt="Mulher dirigindo um veiculo" class="banner-img">
             <p class="banner-title">O caminho para a <br>sua jornada <br>começa aqui</p>
+            <img src="assets/img/banners/01.png" alt="Mulher dirigindo um carro" class="banner-img">
+            
             <div class="pesquisa">
                 <ul class="lista-pesquisa">
-                    <li>icone</li>
-                    <li>categoria de veiculos</li>
-                    <li>dt inicial</li>
-                    <li>icone</li>
-                    <li>dt final</li>
-                    <li>localização</li>
-                    <li>icone pesquisa</li>
+                    <div class="pesquisa-categoria-01">
+                        <i class="fa-solid fa-car-side item-pesquisa icone-categoria"></i>
+                        <label for="categorias"></label>
+                        <select name="categorias" id="categorias">
+                            <option value="0" disabled selected>Categorias</option>
+                            <option value="1">Pequeno</option>
+                            <option value="2">Médio</option>
+                            <option value="3">Grande</option>
+                            <option value="4">Executivo</option>
+                            <option value="5">Pick-up</option>
+                            <option value="6">SUV</option>
+                        </select>
+                    </div>
+                    <div class="pesquisa-categoria-02">
+                        <li class="item-pesquisa">
+                            <input type="datetime-local" id="retirada" name="retirada">
+                            <label for="retirada">Retirada</label>
+                        </li>
+                        <i class="fa-regular fa-calendar icone-calendario"></i>
+                        <li class="item-pesquisa">
+                            <label for="entrega">Entrega</label>
+                            <input type="datetime-local" id="entrega" name="entrega">
+                        </li>
+                    </div>
+                    <div class="pesquisa-categoria-03">
+                        <li class="item-pesquisa">
+                            <label for="Local"></label>
+                            <select name="Local" id="Local">
+                                <option value="0" disabled selected>Local de retirada</option>
+                                <option value="1">Pinheiros</option>
+                                <option value="2">Morumbi</option>
+                                <option value="3">Conceição</option>
+                                <option value="4">Tatuapé</option>
+                                <option value="5">Itaquera</option>
+                                <option value="5">Barra-Funda</option>
+                                <option value="6">Pompeia</option>
+                            </select>
+                        </li>
+                        <li class="icone-pesquisa">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </section>
+        <section class="produtos">
+            <h3 class="title-produtos">Recomendados</h3>
+            <div class="container-produtos-recomendados">
+                <div class="container-itens">
+                    <div class="item-01"></div>
+                </div>
+                <div class="container-itens">
+                    <div class="item-02"></div>
+                </div>
+                <div class="container-itens">
+                    <div class="item-03"></div>
+                </div>
+                <div class="container-itens">
+                    <div class="item-04"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p></p>
+        </footer>
     </main>
-    
 </body>
 </html>
