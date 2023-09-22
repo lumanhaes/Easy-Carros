@@ -1,7 +1,7 @@
 @import url(/src/assets/style/css/root/var.css);
 
 .banner-pesquisa{
-    width: 92%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .banner-img{
-    width: 92vw;
+    width: 85vw;
     margin: 7rem auto 0;
     border-radius: var(--radius-geral);
 }

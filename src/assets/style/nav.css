@@ -31,7 +31,7 @@
     font-weight: 400;
 }
 
-.botao-cadastro{
+.botao{
     background-color: var(--btn-color);
     border-radius: var(--radius-geral);
     padding: 0.8rem 1rem 0.8rem;

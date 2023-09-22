@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/img/logos/Favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/style/main.css">
-    <link rel="stylesheet" href="assets/style/nav/nav.css">
-    <link rel="stylesheet" href="assets/style/banner/banner.css">
-    <link rel="stylesheet" href="assets/style/search/search.css">
-    <link rel="stylesheet" href="assets/style/products/products.css">
+    <link rel="stylesheet" href="assets/style/nav.css">
+    <link rel="stylesheet" href="assets/style/banner.css">
+    <link rel="stylesheet" href="assets/style/search.css">
+    <link rel="stylesheet" href="assets/style/products.css">
+    <link rel="stylesheet" href="assets/style/card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Easy Carros</title>
 </head>
@@ -21,7 +22,7 @@
                 <a href="#" class="item-lista item-lista-02">Categorias</a>
                 <a href="#" class="item-lista item-lista-03">Contato</a>
                 <a href="#" class="item-lista item-lista-04">Sobre</a>
-                <a href="#" class="item-lista botao-cadastro item-lista-05">Cadastre-se</a>
+                <a href="#" class="item-lista botao item-lista-05">Cadastre-se</a>
             </ul>
         </nav>
     </header>
@@ -80,17 +81,40 @@
         <section class="produtos">
             <h3 class="title-produtos">Recomendados</h3>
             <div class="container-produtos-recomendados">
-                <div class="container-itens">
-                    <div class="item-01"></div>
-                </div>
-                <div class="container-itens">
-                    <div class="item-02"></div>
-                </div>
-                <div class="container-itens">
-                    <div class="item-03"></div>
-                </div>
-                <div class="container-itens">
-                    <div class="item-04"></div>
+
+                <div class="card-itens">
+                    <div class="container-img">
+                        <div class="card-img-logo card-img-logo-01"></div>   
+                        <img src="assets/img/cars/Argo.png" alt="Fiat argo" class="card-img">
+                    </div>
+                    <div class="card-conteudo">
+                        <p class="card-titulo">Fiat Argo</p>
+                        <p></p>
+                        <div class="card-linha">
+                            <i class="fa-solid fa-fan"></i>
+                            <p class="card-legenda">Ar-condicionado</p>
+                        </div>
+                        <div class="card-linha">
+                            <i class="fa-solid fa-user"></i>
+                            <p class="card-legenda">5 Lugares</p>
+                        </div>
+                        <div class="card-linha">
+                            <i class="fa-solid fa-suitcase"></i>
+                            <p class="card-legenda">1 Mala grande</p>
+                        </div>
+                        <div class="card-linha">
+                            <i class="fa-solid fa-sitemap"></i>
+                            <p class="card-legenda">Automático</p>
+                        </div>
+                        <div class="card-linha">
+                            <i class="fa-solid fa-gauge"></i>
+                            <p class="card-legenda">Quilometragem ilimitada</p>
+                        </div>
+                        <p></p>
+                        <p class="card-preco">R$160,00/d</p>
+                        <a href="#" class="card-botao">Info</a>
+                    </div>
+                    <p>1.0</p>
                 </div>
             </div>
         </section>

@@ -1,0 +1,64 @@
+.card-itens{
+    background-color: var(--bg-color-secondary);
+    border-radius: var(--radius-geral);
+    box-shadow: var(--shadow-geral);
+    height: 25rem;
+    margin: 0.7rem;
+    padding: 1.5rem;
+    display: flex;
+}
+
+.card-img-logo{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img-logo-01{
+    background-image: url(../img/logomarcas/Fiat.png);
+}
+
+.card-img{
+    width: 17vw;
+}
+
+.card-conteudo{
+    margin: 0.5rem 0rem 0rem 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.card-titulo{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.card-legenda{
+    padding-top: 0.3rem;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-linha{
+    display: flex;
+    text-align: center;
+}
+
+.card-preco{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.card-botao{
+    height: 3rem;
+    width: 10rem;
+    text-decoration: none;
+    padding-top: 0.5rem;
+    color: var(--text-color-btn);
+    background-color: var(--btn-color);
+    text-align: center;
+    border-radius: var(--radius-geral);
+}

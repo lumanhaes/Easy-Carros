@@ -1,0 +1,21 @@
+.produtos{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.title-produtos{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.container-produtos-recomendados{
+    width: 80vw;
+    margin: 2rem 1rem 0;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+}
+
+
+
+
