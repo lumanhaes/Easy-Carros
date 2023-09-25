@@ -4,18 +4,20 @@
 :root{
 
     /* Main */
-    --radius-geral: 1rem;
+    --radius-geral: 1.5rem;
     --shadow-geral: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --font-family: 'Roboto', 'Open Sans', sans-serif;
+    --link-color: #747a8a;
 
     /* Nav */
     --text-size-nav: 1.4rem;
     --text-color-nav: #000000;
     --font-weight-nav: 400;
 
-    /* Title */
+    /* Text */
     --text-size-title: 3vw;
     --text-color-title: #FFF;
+    --text-color-title-secondary: #0ADBC6;
     --text-shadow-title: 0px 4px 4px rgb(36, 34, 34);
 
     /* Background */
