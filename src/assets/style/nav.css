@@ -1,9 +1,8 @@
 @import url(/src/assets/style/css/root/var.css);
 
 .navbar {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-secondary);
     position: fixed;
-
     top: 0;
     left: 0;
     width: 100%;
@@ -33,7 +32,7 @@
 
 .botao{
     background-color: var(--btn-color);
-    border-radius: var(--radius-geral);
+    border-radius: var(--btn-radius);
     padding: 0.8rem 1rem 0.8rem;
     font-weight: var(--font-wegth-btn);
     color: var(--text-color-btn);

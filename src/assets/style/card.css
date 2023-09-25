@@ -1,3 +1,5 @@
+@import url(/src/assets/style/css/root/var.css);
+
 .card-itens{
     background-color: var(--bg-color-secondary);
     border-radius: var(--radius-geral);
@@ -20,6 +22,18 @@
     background-image: url(../img/logomarcas/Fiat.png);
 }
 
+.card-img-logo-02{
+    background-image: url(../img/logomarcas/Pegeut.png);
+}
+
+.card-img-logo-03{
+    background-image: url(../img/logomarcas/Renault.png);
+}
+
+.card-img-logo-04{
+    background-image: url(../img/logomarcas/Volkswagen.png);
+}
+
 .card-img{
     width: 17vw;
 }
@@ -32,8 +46,14 @@
 }
 
 .card-titulo{
+    padding-bottom: 2rem;
     font-size: 2.4rem;
     font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.card-linha{
+    display: flex;
 }
 
 .card-legenda{
@@ -43,12 +63,8 @@
     font-weight: 600;
 }
 
-.card-linha{
-    display: flex;
-    text-align: center;
-}
-
 .card-preco{
+    margin-top: 0.2rem;
     font-size: 2rem;
     font-weight: 400;
 }
@@ -60,5 +76,5 @@
     color: var(--text-color-btn);
     background-color: var(--btn-color);
     text-align: center;
-    border-radius: var(--radius-geral);
+    border-radius: var(--btn-radius);
 }

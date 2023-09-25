@@ -1,8 +1,10 @@
+@import url(/src/assets/style/css/root/var.css);
+
 .pesquisa{
     position: relative;
     bottom: 3rem;
     left: 0.7rem;
-    height: 5rem;
+    height: 6rem;
     width: 80vw;
     margin: 0 auto;
     background-color: var(--bg-color-secondary);
@@ -13,7 +15,7 @@
 .lista-pesquisa{
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 2rem;
     list-style-type: none;
     text-align: center;
 }
