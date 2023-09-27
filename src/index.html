@@ -1,301 +1,854 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/logos/Favicon.png" type="image/png">
-    <link rel="stylesheet" href="assets/style/main.css">
-    <link rel="stylesheet" href="assets/style/nav.css">
-    <link rel="stylesheet" href="assets/style/banner.css">
-    <link rel="stylesheet" href="assets/style/search.css">
-    <link rel="stylesheet" href="assets/style/info.css">
-    <link rel="stylesheet" href="assets/style/products.css">
-    <link rel="stylesheet" href="assets/style/card.css">
-    <link rel="stylesheet" href="assets/style/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Easy Carros</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <ul class="navbar-lista">
-                <img src="assets/img/logos/Logo-01.png" class="item-lista item-lista-imagem"></img>
-                <a href="#" class="item-lista item-lista-01">Inicio</a>
-                <a href="#" class="item-lista item-lista-02">Categorias</a>
-                <a href="#" class="item-lista item-lista-03">Contato</a>
-                <a href="#" class="item-lista item-lista-04">Sobre</a>
-                <a href="#" class="item-lista botao item-lista-05">Cadastre-se</a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="banner-pesquisa">
-            <p class="banner-title">O caminho para a <br>sua jornada <br>começa aqui</p>
-            <img src="assets/img/banners/01.png" alt="Mulher dirigindo um carro" class="banner-img">
-            
-            <div class="pesquisa">
-                <ul class="lista-pesquisa">
-                    <div class="pesquisa-categoria-01">
-                        <i class="fa-solid fa-car-side item-pesquisa icone-categoria"></i>
-                        <label for="categorias"></label>
-                        <select name="categorias" id="categorias">
-                            <option value="0" disabled selected>Categorias</option>
-                            <option value="1">Pequeno</option>
-                            <option value="2">Médio</option>
-                            <option value="3">Grande</option>
-                            <option value="4">Executivo</option>
-                            <option value="5">Pick-up</option>
-                            <option value="6">SUV</option>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Easy Carros</title>
+        <link rel="shortcut icon" href="assets/img/logos/Favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/style/var.css">
+        <link rel="stylesheet" href="assets/style/main.css">
+        <link rel="stylesheet" href="assets/style/nav.css">
+        <link rel="stylesheet" href="assets/style/banner.css">
+        <link rel="stylesheet" href="assets/style/search.css">
+        <link rel="stylesheet" href="assets/style/info.css">
+        <link rel="stylesheet" href="assets/style/products.css">
+        <link rel="stylesheet" href="assets/style/footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+
+        <header>
+            <!-- ############################### NAVBAR ############################### -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid nav">
+                <a class="navbar-brand" href="#"><img src="assets/img/logos/Logo-01.png" alt="Ícone Easy Carros"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Pequenos</a></li>
+                        <li><a class="dropdown-item" href="#">Médios</a></li>
+                        <li><a class="dropdown-item" href="#">Grandes</a></li>
+                        <li><a class="dropdown-item" href="#">Executivos</a></li>
+                        <li><a class="dropdown-item" href="#">Pick-ups</a></li>
+                        <li><a class="dropdown-item" href="#">SUV</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Parcerias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatos</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="pesquisa">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="pesquisa">
+                    <button class="btn btn-outline-secondary btn-primario" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- ############################### BANNER ############################### -->
+            <section class="banner-pesquisa">
+                <img src="assets/img/banners/01.png" alt="Mulher dirigindo um carro" class="banner-img">
+                <!-- <p class="banner-title">O caminho para a <br>sua jornada <br>começa aqui</p> -->
+            </section>
+
+            <!-- ############################### PESQUISA ############################### -->
+            <form id="dados" class="dados bg-white rounded-4 justify-content-sm-center" method="post" action="">
+                <div class="row md-3">
+                    <div class="col-md-3 my-3 container-dados">
+                        <label for="dt-retirada" class="form-label item-dados">Retirada</label>
+                        <input type="date" class="form-control" id="data-cadastro" name="data-cadastro" required>
+                    </div>
+                    <div class="col-md-3 my-3 container-dados">
+                        <label for="data-cadastro" class="form-label item-dados">Entrega</label>
+                        <input type="date" class="form-control" id="data-cadastro" name="data-cadastro" required>
+                    </div>
+                    <div class="col-md-3 my-3 container-dados">
+                        <label for="categoria" class="form-label item-dados">Local</label>
+                        <select id="categoria" class="form-select" required>
+                            <option value="0">Selecione</option>
+                            <option value="pinheiros">Pinheiros</option>
+                            <option value="morumbi">Morumbi</option>
+                            <option value="conceicao">Conceicão</option>
+                            <option value="barra-Funda">Barra-Funda</option>
+                            <option value="itaquera">Itaquera</option>
+                            <option value="tatuape">Tatuapé</option>
                         </select>
                     </div>
-                    <div class="pesquisa-categoria-02">
-                        <li class="item-pesquisa">
-                            <input type="datetime-local" id="retirada" name="retirada">
-                            <label for="retirada">Retirada</label>
-                        </li>
-                        <i class="fa-regular fa-calendar icone-calendario"></i>
-                        <li class="item-pesquisa">
-                            <label for="entrega">Entrega</label>
-                            <input type="datetime-local" id="entrega" name="entrega">
-                        </li>
-                    </div>
-                    <div class="pesquisa-categoria-03">
-                        <li class="item-pesquisa">
-                            <label for="Local"></label>
-                            <select name="Local" id="Local">
-                                <option value="0" disabled selected>Local de retirada</option>
-                                <option value="1">Pinheiros</option>
-                                <option value="2">Morumbi</option>
-                                <option value="3">Conceição</option>
-                                <option value="4">Tatuapé</option>
-                                <option value="5">Itaquera</option>
-                                <option value="5">Barra-Funda</option>
-                                <option value="6">Pompeia</option>
-                            </select>
-                        </li>
-                        <li class="icone-pesquisa">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-        </section>
-
-
-        <article class="info">
-            <h3 class="info-titulo">Como funciona</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolore maiores veritatis eos voluptatibus voluptatum rerum.</p>
-            <div class="info-cards">
-
-                <div class="info-card">
-                    <!-- img-01 -->
-                    <div class="info-fundo-img">
-                        <div class="info-img info-img-01"></div>
-                    </div>
-                    <!-- p1 -->
-                    <p class="info-legenda">Titulo 01</p>
-                    <!-- p2 -->
-                    <p class="info-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellat.</p>
-                </div>
-                <div class="info-card">
-                    <!-- img-01 -->
-                    <div class="info-fundo-img">
-                        <div class="info-img info-img-02"></div>
-                    </div>
-                    <!-- p1 -->
-                    <p class="info-legenda">Titulo 02</p>
-                    <!-- p2 -->
-                    <p class="info-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellat.</p>
-                </div>
-                <div class="info-card">
-                    <!-- img-01 -->
-                    <div class="info-fundo-img">
-                        <div class="info-img info-img-03"></div>
-                    </div>
-                    <!-- p1 -->
-                    <p class="info-legenda">Titulo 03</p>
-                    <!-- p2 -->
-                    <p class="info-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellat.</p>
-                </div>
-                <div class="info-card">
-                    <!-- img-01 -->
-                    <div class="info-fundo-img">
-                        <div class="info-img info-img-04"></div>
-                    </div>
-                    <!-- p1 -->
-                    <p class="info-legenda">Titulo 03</p>
-                    <!-- p2 -->
-                    <p class="info-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellat.</p>
-                </div>
-            </div>
-        </article>
-
-
-        <section class="produtos">
-            <h3 class="title-produtos">Recomendados</h3>
-
-            <!-- Card 01 -->
-            <div class="container-produtos-recomendados">
-                <div class="card-itens">
-                    <div class="container-img">
-                        <div class="card-img-logo card-img-logo-01"></div>   
-                        <img src="assets/img/cars/Argo.png" alt="Fiat argo" class="card-img">
-                    </div>
-                    <div class="card-conteudo">
-                        <p class="card-titulo">Fiat Argo</p>
-                        <p></p>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-fan"></i>
-                            <p class="card-legenda">Ar-condicionado</p>
-                        </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-user"></i>
-                            <p class="card-legenda">5 Lugares</p>
-                        </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-suitcase"></i>
-                            <p class="card-legenda">1 Mala grande</p>
-                        </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-sitemap"></i>
-                            <p class="card-legenda">Automático</p>
-                        </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-gauge"></i>
-                            <p class="card-legenda">Quilometragem ilimitada</p>
-                        </div>
-                        <p></p>
-                        <p class="card-preco">R$160,00/d</p>
-                        <a href="#" class="card-botao">Info</a>
+                    <div class="col-md-3 my-3">
+                        <button type="submit" class="btn btn-outline-secondary btn-primario">Confirmar</button>
                     </div>
                 </div>
+            </form>
 
-                <!-- Card 02 -->
-                <div class="card-itens">
-                    <div class="container-img">
-                        <div class="card-img-logo card-img-logo-02"></div>   
-                        <img src="assets/img/cars/2008.png" alt="Fiat argo" class="card-img">
+            <!-- ############################### INFORMAÇÕES ############################### -->
+            <article class="container-fluid">
+                <div class="info">
+                    <h4 class="info-titulo">Como funciona</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolore maiores veritatis eos voluptatibus voluptatum rerum.</p>
+                    <div class="info-cards">
+
+                    <div class="info-card">
+                        <!-- img-01 -->
+                        <div class="info-fundo-img">
+                            <div class="info-img info-img-01"></div>
+                        </div>
+                        <!-- p1 -->
+                        <p class="info-legenda">Titulo 01</p>
+                        <!-- p2 -->
+                        <p class="info-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellat.</p>
                     </div>
-                    <div class="card-conteudo">
-                        <p class="card-titulo">Peugeot 2008</p>
-                        <p></p>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-fan"></i>
-                            <p class="card-legenda">Ar-condicionado</p>
+                    <div class="info-card">
+                        <!-- img-01 -->
+                        <div class="info-fundo-img">
+                            <div class="info-img info-img-02"></div>
                         </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-user"></i>
-                            <p class="card-legenda">5 Lugares</p>
+                        <!-- p1 -->
+                        <p class="info-legenda">Titulo 02</p>
+                        <!-- p2 -->
+                        <p class="info-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellat.</p>
+                    </div>
+                    <div class="info-card">
+                        <!-- img-01 -->
+                        <div class="info-fundo-img">
+                            <div class="info-img info-img-03"></div>
                         </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-suitcase"></i>
-                            <p class="card-legenda">1 Mala grande</p>
+                        <!-- p1 -->
+                        <p class="info-legenda">Titulo 03</p>
+                        <!-- p2 -->
+                        <p class="info-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellat.</p>
+                    </div>
+                    <div class="info-card">
+                        <!-- img-01 -->
+                        <div class="info-fundo-img">
+                            <div class="info-img info-img-04"></div>
                         </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-sitemap"></i>
-                            <p class="card-legenda">Automático</p>
-                        </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-gauge"></i>
-                            <p class="card-legenda">Quilometragem ilimitada</p>
-                        </div>
-                        <p></p>
-                        <p class="card-preco">R$160,00/d</p>
-                        <a href="#" class="card-botao">Info</a>
+                        <!-- p1 -->
+                        <p class="info-legenda">Titulo 03</p>
+                        <!-- p2 -->
+                        <p class="info-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellat.</p>
                     </div>
                 </div>
+                </div>
+            </article>
 
-                <!-- Card 03 -->
-                <div class="card-itens">
-                    <div class="container-img">
-                        <div class="card-img-logo card-img-logo-03"></div>   
-                        <img src="assets/img/cars/Sandero.png" alt="Fiat argo" class="card-img">
+            
+            <!-- ############################### PRODUTOS ############################### -->
+            <article class="produtos">
+
+                <div class="container-produtos">
+
+                    <!-- FIAT ARGO -->
+                    <div class="card" style="width: 22rem;">
+                        <img src="assets/img/cars/Argo.png" class="card-img-top card-img-car" alt="Carro Fiat Argo">
+                        <div class="card-body">
+                        <h5 class="card-title">Fiat Argo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
                     </div>
-                    <div class="card-conteudo">
-                        <p class="card-titulo">Renault Sandero</p>
-                        <p></p>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-fan"></i>
-                            <p class="card-legenda">Ar-condicionado</p>
+
+                    <!-- PEUGEOT 2008 -->
+                    <div class="card" style="width: 22rem;">
+                        <img src="assets/img/cars/2008.png" class="card-img-top card-img-car" alt="Carro Peugeot 2008">
+                        <div class="card-body">
+                        <h5 class="card-title">Peugeot 2008</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-user"></i>
-                            <p class="card-legenda">5 Lugares</p>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
                         </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-suitcase"></i>
-                            <p class="card-legenda">1 Mala grande</p>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
                         </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-sitemap"></i>
-                            <p class="card-legenda">Automático</p>
+                    </div>
+
+                    <!-- VOLKSWAGEN POLO -->
+                    <div class="card" style="width: 22rem;">
+                        <img src="assets/img/cars/Polo.png" class="card-img-top card-img-car" alt="Carro Volkswagen Polo">
+                        <div class="card-body">
+                        <h5 class="card-title">Volkswagen Polo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-gauge"></i>
-                            <p class="card-legenda">Quilometragem ilimitada</p>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
                         </div>
-                        <p></p>
-                        <p class="card-preco">R$160,00/d</p>
-                        <a href="#" class="card-botao">Info</a>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- RENAULT SANDERO -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/Sandero.png" class="card-img-top card-img-car" alt="Carro Renault Sandero">
+                        <div class="card-body">
+                        <h5 class="card-title">Renault Sandero</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- VOLKSWAGEN GOL -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/gol.png" class="card-img-top card-img-car" alt="Carro Volkswagen Gol">
+                        <div class="card-body">
+                        <h5 class="card-title">Volkswagen Gol</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- HYUNDAI HB-20-->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/hb20.png" class="card-img-top card-img-car" alt="Carro Hyundai HB-20">
+                        <div class="card-body">
+                        <h5 class="card-title">Hyundai HB-20</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- FORD KA -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/ka.png" class="card-img-top card-img-car" alt="Carro Ford Ka">
+                        <div class="card-body">
+                        <h5 class="card-title">Ford Ka</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- HYUNDAI HB-20S -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/hb20s.png" class="card-img-top card-img-car" alt="Carro Hyundai HB-20s">
+                        <div class="card-body">
+                        <h5 class="card-title">Hyundai HB-20s</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- RENAULT LOGAN -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/logan.png" class="card-img-top card-img-car" alt="Carro Renault Logan">
+                        <div class="card-body">
+                        <h5 class="card-title">Renault Logan</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- FIAT MOBI -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/mobi.png" class="card-img-top card-img-car" alt="Carro Fiat Mobi">
+                        <div class="card-body">
+                        <h5 class="card-title">Fiat Mobi</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- Chevrolet Onix -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/onix.png" class="card-img-top card-img-car" alt="Carro Chevrolet Onix">
+                        <div class="card-body">
+                        <h5 class="card-title">Chevrolet Onix</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- JEEP RENEGADE -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/renegade.png" class="card-img-top card-img-car" alt="Carro Jeep Renegade">
+                        <div class="card-body">
+                        <h5 class="card-title">Jeep Renegade</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- FIAT SIENA -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/siena.png" class="card-img-top card-img-car" alt="Carro Fiat Siena">
+                        <div class="card-body">
+                        <h5 class="card-title">Fiat Siena</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- VOLKSWAGEN VIRTUS -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/virtus.png" class="card-img-top card-img-car" alt="Carro Volkswagen Virtus">
+                        <div class="card-body">
+                        <h5 class="card-title">Volkswagen Virtus</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- FIAT UNO -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/uno.png" class="card-img-top card-img-car" alt="Carro Fiat Uno">
+                        <div class="card-body">
+                        <h5 class="card-title">Fiat Uno</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- CHEVROLET PRISMA -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/prisma.png" class="card-img-top card-img-car" alt="Carro Chevrolet Prisma">
+                        <div class="card-body">
+                        <h5 class="card-title">Chevrolet Prisma</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- VOLKSWAGEN T-CROSS -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/t-cross.png" class="card-img-top card-img-car" alt="Carro Volkswagen T-CROSS">
+                        <div class="card-body">
+                        <h5 class="card-title">Volkswagen T-CROSS</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- JEEP COMPASS -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/compass.png" class="card-img-top card-img-car" alt="Carro Jeep Compass">
+                        <div class="card-body">
+                        <h5 class="card-title">Jeep Compass</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
+                    </div>
+
+                    <!-- JEEP COMPASS -->
+                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                        <img src="assets/img/cars/compass.png" class="card-img-top card-img-car" alt="Carro Jeep Compass">
+                        <div class="card-body">
+                        <h5 class="card-title">Jeep Compass</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body card-produtos">
+                            <div class="card-linha">
+                                <i class="fa-solid fa-fan"></i>
+                                <p class="card-legenda">Ar-condicionado</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="card-legenda">5 Lugares</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p class="card-legenda">1 Mala grande</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <p class="card-legenda">Automático</p>
+                            </div>
+                            <div class="card-linha">
+                                <i class="fa-solid fa-gauge"></i>
+                                <p class="card-legenda">Quilometragem ilimitada</p>
+                            </div>
+                        </div>
+                        <div class="card-body card-produtos-botoes">
+                        <p>Preço</p>
+                        <a href="#" class="card-link">Info</a>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Card - 04 -->
-                <div class="card-itens">
-                    <div class="container-img">
-                        <div class="card-img-logo card-img-logo-04"></div>   
-                        <img src="assets/img/cars/Polo.png" alt="Fiat argo" class="card-img">
-                    </div>
-                    <div class="card-conteudo">
-                        <p class="card-titulo">Volkswagen Polo</p>
-                        <p></p>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-fan"></i>
-                            <p class="card-legenda">Ar-condicionado</p>
-                        </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-user"></i>
-                            <p class="card-legenda">5 Lugares</p>
-                        </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-suitcase"></i>
-                            <p class="card-legenda">1 Mala grande</p>
-                        </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-sitemap"></i>
-                            <p class="card-legenda">Automático</p>
-                        </div>
-                        <div class="card-linha">
-                            <i class="fa-solid fa-gauge"></i>
-                            <p class="card-legenda">Quilometragem ilimitada</p>
-                        </div>
-                        <p></p>
-                        <p class="card-preco">R$160,00/d</p>
-                        <a href="#" class="card-botao">Info</a>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="container-footer">
-                <div class="footer-img"></div>
-            <ul class="footer-lista-produtos">
-                <li><a href="#" class="footer-titulo-produto">Produtos e serviços</a></li>
-                <li><a href="#" class="footer-produto">opt-2</a></li>
-                <li><a href="#" class="footer-produto">opt-3</a></li>
-                <li><a href="#" class="footer-produto">opt-4</a></li>
-                <li><a href="#" class="footer-produto">opt-5</a></li>
-            </ul>
-            <ul class="footer-lista-produtos">
-                <li><a href="#" class="footer-titulo-produto">Trabalhe conosco</a></li>
-                <li><a href="#" class="footer-produto">Quem somos</a></li>
-                <li><a href="#" class="footer-produto">Contato</a></li>
-                <li><a href="#" class="footer-produto">opt-4</a></li>
-                <li><a href="#" class="footer-produto">opt-5</a></li>
-            </ul>
-            </div>
-            <p class="footer-direitos">Todos os direitos reservados © - 2023</p>
-        </footer>
-    </main>
-</body>
+
+                
+            </article>
+
+
+            <!-- ############################### FOOTER ############################### -->
+            <footer class="rodape">
+                <div class="container-rodape">
+                    <img src="assets/img/logos/logo-02.png" alt="Logo Easy-Carros" class="rodape-img">
+                    <ul class="rodape-lista">
+                        <a href="#" class="rodape-lista-itens">Link</a>
+                        <a href="#" class="rodape-lista-itens">Link</a>
+                        <a href="#" class="rodape-lista-itens">Link</a>
+                        <a href="#" class="rodape-lista-itens">Link</a>
+                    </ul>
+                    <ul class="rodape-lista">
+                        <a href="#" class="rodape-lista-itens">Link</a>
+                        <a href="#" class="rodape-lista-itens">Link</a>
+                        <a href="#" class="rodape-lista-itens">Link</a>
+                        <a href="#" class="rodape-lista-itens">Link</a>
+                    </ul>
+                </div>
+                <p class="rodape-direitos">Todos os direitos reservados © - 2023</p>
+            </footer>
+        </main>
+
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>

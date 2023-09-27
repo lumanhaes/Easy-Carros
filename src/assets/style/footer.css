@@ -1,51 +1,28 @@
-.footer{
+.rodape{
+    margin: 2rem auto 0 auto;
     background-color: var(--bg-color-footer);
-}
-
-.container-footer{
-    margin: 2.5rem 0 0;
-    height: 200px;
+    height: 30vh;
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
 }
 
-.footer-img{
-    height: 200px;
-    width: 200px;
-    background-image: url(../img/logos/logo-02.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.footer-lista-produtos{
-    margin: 5rem 0 0 0;
-    list-style-type: none;
-}
-
-.footer-titulo-produto{
-    text-align: center;
-    text-decoration: none;
-    font-size: 2rem;
-    color: var(--text-color-title-secondary);
-}
-
-.footer-produto{
-    font-size: 1.8rem;
-    text-align: center;
-    font-weight: 300;
-    text-decoration: none;
-    color: var(--text-color-title);
-}
-
-.footer-direitos{
-    width: 70%;
+.container-rodape{
     margin: 0 auto;
-    padding: 5vh;
-    border-top: 0.1px solid;
-    margin-top: 0.1rem;
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-bottom: solid 0.01rem rgba(222, 226, 230, 0.445);
+}
+
+.rodape-lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-lista-itens{color: aliceblue; text-decoration: none;}
+
+.rodape-direitos{
+    margin: 1.5rem 0;
+    color: aliceblue;
     text-align: center;
-    color: var(--text-color-title);
-    background-color: var(--bg-color-footer);
 }

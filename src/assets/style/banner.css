@@ -1,25 +1,12 @@
-@import url(/src/assets/style/css/root/var.css);
+@import url(var.css);
 
 .banner-pesquisa{
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
 }
 
-.banner-title{
-    position: absolute;
-    top: 12vh;
-    margin: 3vh 10vw 0;
-    font-size: var(--text-size-title);
-    color: var(--text-color-title);
-    text-shadow: var(--text-shadow-title);
-
-}
-
 .banner-img{
-    width: 85vw;
-    margin: 7rem auto 0;
+    width: 80vw;
+    margin: 5rem auto 0 auto;
     border-radius: var(--radius-geral);
 }
-
-
-

@@ -1,39 +1,15 @@
-@import url(/src/assets/style/css/root/var.css);
+@import url(var.css);
 
-.navbar {
-    background-color: var(--bg-color-secondary);
-    position: fixed;
-    top: 0;
-    left: 0;
+.navbar{
+    padding: 0;
     width: 100%;
+    position: fixed;
     z-index: 1;
+}
+
+.nav{
+    padding: 0.3rem 2rem;
     border-radius: 0 0 1rem 1rem;
-}
-
-.navbar-lista{
-    list-style-type: none;
-    display: flex;
-    padding: 1rem 0 1rem 0;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.item-lista{
-    text-decoration: none;
-    font-size: var(--text-size-nav);
-    color: var(--text-color-nav);
-    font-weight: var(--font-weight-nav);
-}
-
-.item-lista:hover{
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: 400;
-}
-
-.botao{
-    background-color: var(--btn-color);
-    border-radius: var(--btn-radius);
-    padding: 0.8rem 1rem 0.8rem;
-    font-weight: var(--font-wegth-btn);
-    color: var(--text-color-btn);
+    background-color: var(--bg-color-secondary);
+    box-shadow: var(--shadow-geral);
 }

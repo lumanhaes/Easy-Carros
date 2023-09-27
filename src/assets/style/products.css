@@ -1,23 +1,41 @@
-@import url(/src/assets/style/css/root/var.css);
-
 .produtos{
-    width: 80vw;
+   
+    margin: 0 auto 2rem auto;
+}
+.container-produtos{
+    display: none;
+    background-color: var(--bg-color-secondary);
+    border-radius: var(--radius-geral);
+    padding: 2rem;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    box-shadow: var(--shadow-geral);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25%, 30%));
+    justify-content: space-around;
+}
+
+.card-img-car{
     margin: 0 auto;
+    width: 70%;
 }
 
-.title-produtos{
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: 500;
-}
-
-.container-produtos-recomendados{
-    width: 80vw;
-    margin: 2rem 1rem 0;
-    display: grid; 
+.card-produtos{
+    border-top: solid 0.1rem rgb(222, 226, 230);
+    display: grid;
     grid-template-columns: 50% 50%;
 }
+.card-linha{
+    display: flex;
+    align-items: baseline;
+}
 
+.card-legenda{
+    margin: 0.5rem;
+}
 
-
-
+.card-produtos-botoes{
+    border-top: solid 0.1rem rgb(222, 226, 230);
+    display: flex;
+    justify-content: space-around;
+}
