@@ -1,6 +1,10 @@
 .produtos{
-   
+    display: none;
     margin: 0 auto 2rem auto;
+}
+
+.produtos-ativo{
+    margin: 7rem auto 2rem auto;
 }
 .container-produtos{
     display: none;
@@ -38,4 +42,54 @@
     border-top: solid 0.1rem rgb(222, 226, 230);
     display: flex;
     justify-content: space-around;
+}
+
+/* Categorias */
+
+.pequeno{
+    display: none;
+}
+
+.pequeno-ativo{
+    
+}
+
+.medio{
+    display: none;
+}
+
+.medio-ativo{
+
+}
+
+.grande{
+    display: none;
+}
+
+.grande-ativo{
+
+}
+
+.executivo{
+    display: none;
+}
+
+.executivo-ativo{
+
+}
+
+.pick-up{
+    display: none;
+}
+
+.pick-up-ativo{
+
+}
+
+.suv{
+    display: none;
+}
+
+.suv-ativo{
+    
 }

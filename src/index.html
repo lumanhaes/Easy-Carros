@@ -31,19 +31,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Início</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Categorias
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Pequenos</a></li>
-                        <li><a class="dropdown-item" href="#">Médios</a></li>
-                        <li><a class="dropdown-item" href="#">Grandes</a></li>
-                        <li><a class="dropdown-item" href="#">Executivos</a></li>
-                        <li><a class="dropdown-item" href="#">Pick-ups</a></li>
-                        <li><a class="dropdown-item" href="#">SUV</a></li>
-                        </ul>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Serviços</a>
                     </li>
@@ -66,7 +53,7 @@
         <main>
 
             <!-- ############################### BANNER ############################### -->
-            <section class="banner-pesquisa">
+            <section id="banner" class="banner">
                 <img src="assets/img/banners/01.png" alt="Mulher dirigindo um carro" class="banner-img">
                 <!-- <p class="banner-title">O caminho para a <br>sua jornada <br>começa aqui</p> -->
             </section>
@@ -83,25 +70,24 @@
                         <input type="date" class="form-control" id="data-cadastro" name="data-cadastro" required>
                     </div>
                     <div class="col-md-3 my-3 container-dados">
-                        <label for="categoria" class="form-label item-dados">Local</label>
+                        <label for="categoria" class="form-label item-dados">Categorias</label>
                         <select id="categoria" class="form-select" required>
                             <option value="0">Selecione</option>
-                            <option value="pinheiros">Pinheiros</option>
-                            <option value="morumbi">Morumbi</option>
-                            <option value="conceicao">Conceicão</option>
-                            <option value="barra-Funda">Barra-Funda</option>
-                            <option value="itaquera">Itaquera</option>
-                            <option value="tatuape">Tatuapé</option>
+                            <option value="pequeno">Pequeno</option>
+                            <option value="medio">Médio</option>
+                            <option value="grande">Grande</option>
+                            <option value="executivo">Executivo</option>
+                            <option value="suv">SUV</option>
                         </select>
                     </div>
                     <div class="col-md-3 my-3">
-                        <button type="submit" class="btn btn-outline-secondary btn-primario">Confirmar</button>
+                        <button type="submit" id="btn-confirmar" class="btn btn-outline-secondary btn-primario">Pesquisar</button>
                     </div>
                 </div>
             </form>
 
             <!-- ############################### INFORMAÇÕES ############################### -->
-            <article class="container-fluid">
+            <article id="info" class="container-fluid">
                 <div class="info">
                     <h4 class="info-titulo">Como funciona</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolore maiores veritatis eos voluptatibus voluptatum rerum.</p>
@@ -155,10 +141,10 @@
             <!-- ############################### PRODUTOS ############################### -->
             <article class="produtos">
 
-                <div class="container-produtos">
+                <div id="carros" class="container-produtos">
 
                     <!-- FIAT ARGO -->
-                    <div class="card" style="width: 22rem;">
+                    <div class="card carro-argo pequeno" style="width: 22rem;">
                         <img src="assets/img/cars/Argo.png" class="card-img-top card-img-car" alt="Carro Fiat Argo">
                         <div class="card-body">
                         <h5 class="card-title">Fiat Argo</h5>
@@ -193,7 +179,7 @@
                     </div>
 
                     <!-- PEUGEOT 2008 -->
-                    <div class="card" style="width: 22rem;">
+                    <div class="card carro-2008 pequeno" style="width: 22rem;">
                         <img src="assets/img/cars/2008.png" class="card-img-top card-img-car" alt="Carro Peugeot 2008">
                         <div class="card-body">
                         <h5 class="card-title">Peugeot 2008</h5>
@@ -228,7 +214,7 @@
                     </div>
 
                     <!-- VOLKSWAGEN POLO -->
-                    <div class="card" style="width: 22rem;">
+                    <div class="card carro-polo pequeno" style="width: 22rem;">
                         <img src="assets/img/cars/Polo.png" class="card-img-top card-img-car" alt="Carro Volkswagen Polo">
                         <div class="card-body">
                         <h5 class="card-title">Volkswagen Polo</h5>
@@ -263,7 +249,7 @@
                     </div>
 
                     <!-- RENAULT SANDERO -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-sandero pequeno" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/Sandero.png" class="card-img-top card-img-car" alt="Carro Renault Sandero">
                         <div class="card-body">
                         <h5 class="card-title">Renault Sandero</h5>
@@ -298,7 +284,7 @@
                     </div>
 
                     <!-- VOLKSWAGEN GOL -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-gol pequeno" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/gol.png" class="card-img-top card-img-car" alt="Carro Volkswagen Gol">
                         <div class="card-body">
                         <h5 class="card-title">Volkswagen Gol</h5>
@@ -333,7 +319,7 @@
                     </div>
 
                     <!-- HYUNDAI HB-20-->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-hb-20 pequeno" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/hb20.png" class="card-img-top card-img-car" alt="Carro Hyundai HB-20">
                         <div class="card-body">
                         <h5 class="card-title">Hyundai HB-20</h5>
@@ -368,7 +354,7 @@
                     </div>
 
                     <!-- FORD KA -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-ka pequeno" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/ka.png" class="card-img-top card-img-car" alt="Carro Ford Ka">
                         <div class="card-body">
                         <h5 class="card-title">Ford Ka</h5>
@@ -403,7 +389,7 @@
                     </div>
 
                     <!-- HYUNDAI HB-20S -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-hb-20-s medio" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/hb20s.png" class="card-img-top card-img-car" alt="Carro Hyundai HB-20s">
                         <div class="card-body">
                         <h5 class="card-title">Hyundai HB-20s</h5>
@@ -438,7 +424,7 @@
                     </div>
 
                     <!-- RENAULT LOGAN -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-logan pequeno" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/logan.png" class="card-img-top card-img-car" alt="Carro Renault Logan">
                         <div class="card-body">
                         <h5 class="card-title">Renault Logan</h5>
@@ -473,7 +459,7 @@
                     </div>
 
                     <!-- FIAT MOBI -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-mobi pequeno" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/mobi.png" class="card-img-top card-img-car" alt="Carro Fiat Mobi">
                         <div class="card-body">
                         <h5 class="card-title">Fiat Mobi</h5>
@@ -508,7 +494,7 @@
                     </div>
 
                     <!-- Chevrolet Onix -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-onix pequeno" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/onix.png" class="card-img-top card-img-car" alt="Carro Chevrolet Onix">
                         <div class="card-body">
                         <h5 class="card-title">Chevrolet Onix</h5>
@@ -543,7 +529,7 @@
                     </div>
 
                     <!-- JEEP RENEGADE -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-renegade suv" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/renegade.png" class="card-img-top card-img-car" alt="Carro Jeep Renegade">
                         <div class="card-body">
                         <h5 class="card-title">Jeep Renegade</h5>
@@ -578,7 +564,7 @@
                     </div>
 
                     <!-- FIAT SIENA -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-siena medio" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/siena.png" class="card-img-top card-img-car" alt="Carro Fiat Siena">
                         <div class="card-body">
                         <h5 class="card-title">Fiat Siena</h5>
@@ -613,7 +599,7 @@
                     </div>
 
                     <!-- VOLKSWAGEN VIRTUS -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-virtus grande" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/virtus.png" class="card-img-top card-img-car" alt="Carro Volkswagen Virtus">
                         <div class="card-body">
                         <h5 class="card-title">Volkswagen Virtus</h5>
@@ -648,7 +634,7 @@
                     </div>
 
                     <!-- FIAT UNO -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-uno pequeno" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/uno.png" class="card-img-top card-img-car" alt="Carro Fiat Uno">
                         <div class="card-body">
                         <h5 class="card-title">Fiat Uno</h5>
@@ -683,7 +669,7 @@
                     </div>
 
                     <!-- CHEVROLET PRISMA -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-prisma medio" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/prisma.png" class="card-img-top card-img-car" alt="Carro Chevrolet Prisma">
                         <div class="card-body">
                         <h5 class="card-title">Chevrolet Prisma</h5>
@@ -718,7 +704,7 @@
                     </div>
 
                     <!-- VOLKSWAGEN T-CROSS -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-t-cross suv" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/t-cross.png" class="card-img-top card-img-car" alt="Carro Volkswagen T-CROSS">
                         <div class="card-body">
                         <h5 class="card-title">Volkswagen T-CROSS</h5>
@@ -753,42 +739,7 @@
                     </div>
 
                     <!-- JEEP COMPASS -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
-                        <img src="assets/img/cars/compass.png" class="card-img-top card-img-car" alt="Carro Jeep Compass">
-                        <div class="card-body">
-                        <h5 class="card-title">Jeep Compass</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card-body card-produtos">
-                            <div class="card-linha">
-                                <i class="fa-solid fa-fan"></i>
-                                <p class="card-legenda">Ar-condicionado</p>
-                            </div>
-                            <div class="card-linha">
-                                <i class="fa-solid fa-user"></i>
-                                <p class="card-legenda">5 Lugares</p>
-                            </div>
-                            <div class="card-linha">
-                                <i class="fa-solid fa-suitcase"></i>
-                                <p class="card-legenda">1 Mala grande</p>
-                            </div>
-                            <div class="card-linha">
-                                <i class="fa-solid fa-sitemap"></i>
-                                <p class="card-legenda">Automático</p>
-                            </div>
-                            <div class="card-linha">
-                                <i class="fa-solid fa-gauge"></i>
-                                <p class="card-legenda">Quilometragem ilimitada</p>
-                            </div>
-                        </div>
-                        <div class="card-body card-produtos-botoes">
-                        <p>Preço</p>
-                        <a href="#" class="card-link">Info</a>
-                        </div>
-                    </div>
-
-                    <!-- JEEP COMPASS -->
-                    <div class="card" style="width: 22rem; margin-top: 10%;">
+                    <div class="card carro-compass suv" style="width: 22rem; margin-top: 10%;">
                         <img src="assets/img/cars/compass.png" class="card-img-top card-img-car" alt="Carro Jeep Compass">
                         <div class="card-body">
                         <h5 class="card-title">Jeep Compass</h5>
@@ -822,9 +773,6 @@
                         </div>
                     </div>
                 </div>
-                </div>
-
-                
             </article>
 
 
@@ -849,6 +797,7 @@
             </footer>
         </main>
 
-        <script src="assets/js/script.js"></script>
+        <script src="assets/js/products.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
     </body>
 </html>

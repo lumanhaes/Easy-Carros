@@ -1,7 +1,10 @@
-
 .info{
     width: 50%;
     margin: 0 auto 0 auto;
+}
+
+.info-rm{
+    display: none;
 }
 
 .info-titulo{

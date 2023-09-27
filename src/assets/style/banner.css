@@ -1,8 +1,12 @@
 @import url(var.css);
 
-.banner-pesquisa{
+.banner{
     width: 80%;
     margin: 0 auto;
+}
+
+.banner-rm{
+    display: none;
 }
 
 .banner-img{

@@ -11,6 +11,17 @@
     box-shadow: var(--shadow-geral);
 }
 
+.dados-ativo{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-geral);
+}
+
 .container-dados{
     display: flex;
     align-items: end;
