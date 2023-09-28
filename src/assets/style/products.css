@@ -4,6 +4,7 @@
 }
 
 .produtos-ativo{
+    display: block;
     margin: 7rem auto 2rem auto;
 }
 .container-produtos{
@@ -44,52 +45,21 @@
     justify-content: space-around;
 }
 
-/* Categorias */
+/*  CATEGORIAS */
+.pequeno{display: none;}
 
-.pequeno{
-    display: none;
-}
+.pequeno-ativo{display: block;}
 
-.pequeno-ativo{
-    
-}
+.medio{display: none;}
 
-.medio{
-    display: none;
-}
+.medio-ativo{display: block;}
 
-.medio-ativo{
+.grande{display: none;}
 
-}
+.grande-ativo{display: block;}
 
-.grande{
-    display: none;
-}
+.suv{display: none;}
 
-.grande-ativo{
+.suv-ativo{display: block;}
 
-}
 
-.executivo{
-    display: none;
-}
-
-.executivo-ativo{
-
-}
-
-.pick-up{
-    display: none;
-}
-
-.pick-up-ativo{
-
-}
-
-.suv{
-    display: none;
-}
-
-.suv-ativo{
-    
-}
