@@ -12,8 +12,8 @@
     background-color: var(--bg-color-secondary);
     border-radius: var(--radius-geral);
     padding: 2rem;
-    width: 80%;
-    margin: 2rem auto 0 auto;
+    width: 90%;
+    margin: 0 auto;
     box-shadow: var(--shadow-geral);
     display: grid;
     grid-template-columns: repeat(3, minmax(25%, 30%));

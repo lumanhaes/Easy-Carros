@@ -13,3 +13,7 @@
     background-color: var(--bg-color-secondary);
     box-shadow: var(--shadow-geral);
 }
+
+.nav-autentica{
+    margin: 0 1rem;
+}

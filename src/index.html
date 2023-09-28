@@ -41,10 +41,10 @@
                         <a class="nav-link" href="#">Contatos</a>
                     </li>
                     </ul>
-                    <form class="d-flex" role="pesquisa">
-                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="pesquisa">
-                    <button class="btn btn-outline-secondary btn-primario" type="submit">Pesquisar</button>
-                    </form>
+                    <div class="nav-autentica">
+                        <button class="btn btn-outline-secondary btn-login" type="submit">Login</button>
+                        <button class="btn btn-outline-secondary btn-cadastro" type="submit">Cadastrar-se</button>
+                    </div>
                 </div>
                 </div>
             </nav>
@@ -59,17 +59,17 @@
             </section>
 
             <!-- ############################### PESQUISA ############################### -->
-            <form id="dados" class="dados bg-white rounded-4 justify-content-sm-center" method="post" action="">
-                <div class="row md-3">
-                    <div class="col-md-3 my-3 container-dados">
+            <form id="dados" class="dados bg-white rounded-4" method="post" action="">
+                <div class="container-search">
+                    <div class="container-dados">
                         <label for="dt-retirada" class="form-label item-dados">Retirada</label>
                         <input type="date" class="form-control" id="data-cadastro" name="data-cadastro" required>
                     </div>
-                    <div class="col-md-3 my-3 container-dados">
+                    <div class="container-dados">
                         <label for="data-cadastro" class="form-label item-dados">Entrega</label>
                         <input type="date" class="form-control" id="data-cadastro" name="data-cadastro" required>
                     </div>
-                    <div class="col-md-3 my-3 container-dados">
+                    <div class="container-dados">
                         <label for="categoria" class="form-label item-dados">Categorias</label>
                         <select id="categoria" class="form-select" required>
                             <option value="0" disabled>Selecione</option>
@@ -79,8 +79,8 @@
                             <option value="suv">SUV</option>
                         </select>
                     </div>
-                    <div class="col-md-3 my-3">
-                        <button type="submit" id="btn-confirmar" class="btn btn-outline-secondary btn-primario">Pesquisar</button>
+                    <div class="container-dados">
+                        <button type="submit" id="btn-confirmar" class="btn btn-outline-secondary btn-pesquisar">Pesquisar</button>
                     </div>
                 </div>
             </form>

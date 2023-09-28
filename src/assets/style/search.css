@@ -11,6 +11,13 @@
     box-shadow: var(--shadow-geral);
 }
 
+.container-search{
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .dados-ativo{
     width: 70%;
     margin: 0 auto;
@@ -23,8 +30,9 @@
 }
 
 .container-dados{
+    margin: 0 0.5rem;
     display: flex;
-    align-items: end;
+    justify-content: space-between;
 }
 
 .item-dados{
