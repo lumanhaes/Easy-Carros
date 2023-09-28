@@ -1,7 +1,7 @@
 .rodape{
     margin: 2rem auto 0 auto;
     background-color: var(--bg-color-footer);
-    height: 30vh;
+    height: 35vh;
     width: 100%;
 }
 
@@ -22,7 +22,7 @@
 .rodape-lista-itens{color: aliceblue; text-decoration: none;}
 
 .rodape-direitos{
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0 0;
     color: aliceblue;
     text-align: center;
 }
