@@ -5,7 +5,7 @@
 
     /* Main */
     --radius-geral: 1.5rem;
-    --shadow-geral: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --shadow-geral: 0 11px 34px 0 rgba(0,0,0,.2);
     --font-family: 'Roboto', 'Open Sans', sans-serif;
     --link-color: #747a8a;
 
@@ -21,7 +21,7 @@
     --text-shadow-title: 0px 4px 4px rgb(36, 34, 34);
 
     /* Background */
-    --bg-color: #f8f9fa;
+    --bg-color: #fbfbfd;
     --bg-color-secondary: #FFFFFF;
 
     /* Button */

@@ -1,0 +1,39 @@
+/* Removendo os controles do input number */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.formulario-autenticacao{
+    display: none;
+}
+
+.formulario-autenticacao-ativo{
+    display: block;
+    height: 82vh ;
+    width: 30%;
+    margin: 1rem auto;
+    background-color: var(--bg-color-secondary);
+    box-shadow: var(--shadow-geral);
+    border-radius: var(--radius-geral);
+}
+
+.autenticacao-dados{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.autenticacao-titulo{
+    text-align: center;
+}
+
+.autenticacao-contato{
+    width: 60%;
+    margin: 0 auto;
+}
+
