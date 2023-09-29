@@ -9,22 +9,22 @@ input[type=number] {
 
 }
 
-.formulario-autenticacao{
+.formulario-cadastro{
     display: none;
 }
 
-.formulario-autenticacao-ativo{
+.formulario-cadastro-ativo{
     display: block;
-    height: 82vh ;
+    padding: 2rem;
     width: 30%;
-    margin: 1rem auto;
+    margin: 5vh auto 3rem auto;
     background-color: var(--bg-color-secondary);
     box-shadow: var(--shadow-geral);
     border-radius: var(--radius-geral);
 }
 
 .autenticacao-dados{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -33,7 +33,16 @@ input[type=number] {
 }
 
 .autenticacao-contato{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 
+.container-botao-cadastro{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.container-cadastro{
+    margin: 0.5rem 0;
+}

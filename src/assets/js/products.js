@@ -1,14 +1,3 @@
-//  section banner
-const banner = document.querySelector('#banner');
-// section pesquisa
-const search = document.querySelector('#dados');
-// section info
-const info = document.querySelector('#info');
-// lista de categorias
-const categorias = document.querySelector('#categoria');
-//lista de produtos
-const produtos = document.querySelector('.produtos');
-
 // lista categoria de carros 
 const listaDeCategorias = document.querySelectorAll('.card');
 const categoriaPequeno = document.querySelectorAll('.pequeno');

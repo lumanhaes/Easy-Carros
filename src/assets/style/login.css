@@ -1,0 +1,30 @@
+.formulario-login{
+    display: none;
+}
+
+.formulario-login-ativo{
+    display: block;
+    height: 30%;
+    width: 30%;
+    margin: 12vh auto 29vh auto;
+    background-color: var(--bg-color-secondary);
+    box-shadow: var(--shadow-geral);
+    border-radius: var(--radius-geral);
+    padding: 2.5rem;
+}
+
+.autenticacao-contato{}
+
+.autenticacao-titulo{
+    margin-bottom: 2rem;
+}
+
+.container-login{
+    margin: 0.8rem 0;
+}
+
+.container-botao-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}

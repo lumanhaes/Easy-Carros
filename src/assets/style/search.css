@@ -1,6 +1,6 @@
 @import url(var.css);
 
-.dados{
+.pesquisa{
     width: 70%;
     margin: 0 auto;
     position: relative;
@@ -11,6 +11,10 @@
     box-shadow: var(--shadow-geral);
 }
 
+.pesquisa-rm{
+    display: block;
+}
+
 .container-search{
     padding: 1rem 1rem;
     display: flex;
@@ -18,16 +22,7 @@
     justify-content: space-between;
 }
 
-.dados-ativo{
-    width: 70%;
-    margin: 0 auto;
-    position: relative;
-    top: 5rem;
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--bg-color);
-    box-shadow: var(--shadow-geral);
-}
+
 
 .container-dados{
     margin: 0 0.5rem;
