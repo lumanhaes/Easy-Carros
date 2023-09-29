@@ -1,6 +1,10 @@
+.container-info{
+    width: 100%;
+}
+
 .info{
     width: 50%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 .info-rm{

@@ -15,6 +15,9 @@
         <link rel="stylesheet" href="assets/style/register.css">
         <link rel="stylesheet" href="assets/style/info.css">
         <link rel="stylesheet" href="assets/style/products.css">
+        <link rel="stylesheet" href="assets/style/services.css">
+        <link rel="stylesheet" href="assets/style/parcerias.css">
+        <link rel="stylesheet" href="assets/style/contacts.css">
         <link rel="stylesheet" href="assets/style/footer.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </head>
@@ -31,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        <a id="link-inicio" class="nav-link active" aria-current="page" href="#">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Serviços</a>
@@ -109,60 +112,73 @@
             </form>
 
             <!-- CADASTRO -->
-            <form id="formulario-cadastro" name="autenticacao" action="" method="post" class="formulario-cadastro">
-                <fieldset class="autenticacao-dados">
-                    <legend class="autenticacao-titulo">Crie seu cadastro</legend>
-                    <!-- Nome -->
-                    <div class="container-cadastro">
-                        <input type="text" name="nome" id="nome" placeholder="Nome" class="form-control" required autofocus>
-                    </div>
+            <form  name="autenticacao" action="" method="post" id="formulario-cadastro" class="formulario-cadastro">
+                <legend class="autenticacao-titulo">Crie seu cadastro</legend>
+                <div id="formulario-container-cadastro" class="formulario-container-cadastro">
+                    <fieldset class="autenticacao-dados">
+                        <!-- Nome -->
+                        <div class="container-cadastro">
+                            <input type="text" name="nome" id="nome" placeholder="Nome" class="form-control" required autofocus>
+                        </div>
+    
+                        <!-- Documento -->
+                        <div class="container-cadastro">
+                            <label for="doc" class="form-label">Tipo de Documento</label>
+                            <select id="autenticacao-doc" name="autenticacao-doc" class="form-select" required>
+                                <option value="0" disabled>Documento</option>
+                                <option value="cpf">CPF</option>
+                                <option value="passport">Passaporte</option>
+                                <option value="doc-estrangeiro">Doc. Estrangeiro</option>
+                            </select>
+                        </div>
+                        <div class="container-cadastro">
+                            <input type="number" name="doc" id="doc" placeholder="Documento" maxlength="11" accept="number" class="form-control" required>
+                        </div>
+                        <div class="container-cadastro">
+                            <!-- Genero -->
+                            <p>Genero:</p>
+                            <input type="radio" id="Masculino" name="genero" value="1" class="form-check-input">
+                            <label for="Masculino">Masculino</label>
+                
+                            <input type="radio" id="Feminino" name="genero" value="2" class="form-check-input">
+                            <label for="Feminino">Feminino</label>
+                
+                            <input type="radio" id="Outro" name="genero" value="3" class="form-check-input">
+                            <label for="Outro">Outro</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="autenticacao-contato">
 
-                    <!-- Documento -->
-                    <div class="container-cadastro">
-                        <label for="doc" class="form-label">Tipo de Documento</label>
-                        <select id="autenticacao-doc" name="autenticacao-doc" class="form-select" required>
-                            <option value="0" disabled>Documento</option>
-                            <option value="cpf">CPF</option>
-                            <option value="passport">Passaporte</option>
-                            <option value="doc-estrangeiro">Doc. Estrangeiro</option>
-                        </select>
-                    </div>
-                    <div class="container-cadastro">
-                        <input type="number" name="doc" id="doc" placeholder="Documento" maxlength="11" accept="number" class="form-control" required>
-                    </div>
-                    <div class="container-cadastro">
-                        <!-- Genero -->
-                        <p>Genero:</p>
-                        <input type="radio" id="Masculino" name="genero" value="1" class="form-check-input">
-                        <label for="Masculino">Masculino</label>
-            
-                        <input type="radio" id="Feminino" name="genero" value="2" class="form-check-input">
-                        <label for="Feminino">Feminino</label>
-            
-                        <input type="radio" id="Outro" name="genero" value="3" class="form-check-input">
-                        <label for="Outro">Outro</label>
-                    </div>
-                </fieldset>
-                <fieldset class="autenticacao-contato">
-                    <!-- Email -->
-                    <div class="container-cadastro">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="example@example.com" class="form-control">
-                    </div>
-        
-                    <div class="container-cadastro">
-                        <label for="senha" class="form-label">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="********" class="form-control">
-                    </div>
+                        <!-- Tipo de cadastro -->
+                        <div class="container-cadastro">
+                            <p>Tipo de cadastro:</p>
+                            <input type="radio" id="usuario" name="tipo" value="1" class="form-check-input" required>
+                            <label for="usuario">Usuário</label>
 
-                    <div class="container-botao-cadastro">
-                        <button type="submit" id="btn-cadastro" class="btn btn-outline-secondary btn-cadastro">Cadastrar-se</button>
-                    </div>
-                </fieldset>
+                            <input type="radio" id="profissional" name="tipo" value="2" class="form-check-input" required>
+                            <label for="profissional">Profissional</label>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="container-cadastro">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="example@example.com" class="form-control" required>
+                        </div>
+            
+                        <div class="container-cadastro">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" name="senha" id="senha" placeholder="********" class="form-control" required>
+                        </div>
+    
+                        <div class="container-botao-cadastro">
+                            <button type="submit" id="btn-cadastro" class="btn btn-outline-secondary btn-cadastro">Cadastrar-se</button>
+                        </div>
+                    </fieldset>
+                </div>
             </form>
 
             <!-- ############################### INFORMAÇÕES ############################### -->
-            <article id="info" class="container-fluid">
+            <article id="info" class="container-fluid container-info">
                 <div class="info">
                     <h4 class="info-titulo">Como funciona</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolore maiores veritatis eos voluptatibus voluptatum rerum.</p>
@@ -850,6 +866,23 @@
                 </div>
             </article>
 
+            <!-- ############################### SERVIÇOS ############################### -->
+            <article class="container-servicos container-fluid">
+                <h3 class="servicos-titulo">Serviços</h3>
+                <p class="servicos-legenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perferendis nobis pariatur ut voluptatibus molestiae expedita numquam aspernatur non excepturi debitis dolore modi repellendus eos, provident ratione sint eaque. Eius, ad aut exercitationem labore eos, sit recusandae impedit nesciunt maiores eaque quis. Aperiam, cupiditate est. Sed cupiditate delectus incidunt saepe ipsa similique alias optio hic cum. Omnis ut enim necessitatibus mollitia voluptas corporis explicabo voluptatum reiciendis unde, doloribus ab molestias laborum quae? Nobis provident debitis accusantium tempora pariatur quae fuga aliquid deserunt quis cumque maiores culpa, repellendus inventore. Voluptatibus unde beatae, modi expedita deserunt quis architecto earum consequuntur vitae ex.</p>
+            </article>
+
+            <!-- ############################### PARCERIAS ############################### -->
+            <article class="container-parcerias container-fluid">
+                <h3 class="parcerias-titulo">Parcerias</h3>
+                <p class="parcerias-legenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perferendis nobis pariatur ut voluptatibus molestiae expedita numquam aspernatur non excepturi debitis dolore modi repellendus eos, provident ratione sint eaque. Eius, ad aut exercitationem labore eos, sit recusandae impedit nesciunt maiores eaque quis. Aperiam, cupiditate est. Sed cupiditate delectus incidunt saepe ipsa similique alias optio hic cum. Omnis ut enim necessitatibus mollitia voluptas corporis explicabo voluptatum reiciendis unde, doloribus ab molestias laborum quae? Nobis provident debitis accusantium tempora pariatur quae fuga aliquid deserunt quis cumque maiores culpa, repellendus inventore. Voluptatibus unde beatae, modi expedita deserunt quis architecto earum consequuntur vitae ex.</p>
+            </article>
+
+            <!-- ############################### CONTATOS ############################### -->
+            <article class="container-contatos container-fluid">
+                <h3 class="contatos-titulo">contatos</h3>
+                <p class="contatos-legenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perferendis nobis pariatur ut voluptatibus molestiae expedita numquam aspernatur non excepturi debitis dolore modi repellendus eos, provident ratione sint eaque. Eius, ad aut exercitationem labore eos, sit recusandae impedit nesciunt maiores eaque quis. Aperiam, cupiditate est. Sed cupiditate delectus incidunt saepe ipsa similique alias optio hic cum. Omnis ut enim necessitatibus mollitia voluptas corporis explicabo voluptatum reiciendis unde, doloribus ab molestias laborum quae? Nobis provident debitis accusantium tempora pariatur quae fuga aliquid deserunt quis cumque maiores culpa, repellendus inventore. Voluptatibus unde beatae, modi expedita deserunt quis architecto earum consequuntur vitae ex.</p>
+            </article>
 
             <!-- ############################### FOOTER ############################### -->
             <footer class="rodape">
@@ -873,6 +906,7 @@
         </main>
 
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/nav.js"></script>
         <script src="assets/js/login.js"></script>
         <script src="assets/js/register.js"></script>
         <script src="assets/js/products.js"></script>

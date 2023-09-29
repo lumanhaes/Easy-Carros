@@ -1,0 +1,22 @@
+.container-parcerias{
+    display: none;
+}
+
+.container-parcerias-ativo{
+    display: none;
+    padding: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--bg-color-secondary);
+    border-radius: var(--radius-geral);
+    box-shadow: var(--shadow-geral);
+}
+
+.parcerias-titulo{
+    text-align: center;
+}
+
+.parcerias-legenda{
+    width: 90%;
+    margin: 2rem auto;
+}

@@ -1,12 +1,10 @@
 /* Removendo os controles do input number */
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
-    
 }
 input[type=number] { 
    -moz-appearance: textfield;
    appearance: textfield;
-
 }
 
 .formulario-cadastro{
@@ -16,11 +14,16 @@ input[type=number] {
 .formulario-cadastro-ativo{
     display: block;
     padding: 2rem;
-    width: 30%;
-    margin: 5vh auto 3rem auto;
+    width: 50%;
+    margin: 15vh auto 10rem auto;
     background-color: var(--bg-color-secondary);
     box-shadow: var(--shadow-geral);
     border-radius: var(--radius-geral);
+}
+
+.formulario-container-cadastro{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .autenticacao-dados{
@@ -45,4 +48,9 @@ input[type=number] {
 
 .container-cadastro{
     margin: 0.5rem 0;
+}
+
+.container-cadastro-item{
+    margin: 0 1rem;
+    
 }
