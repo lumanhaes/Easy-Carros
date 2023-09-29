@@ -11,9 +11,21 @@
     box-shadow: var(--shadow-geral);
 }
 
+.pesquisa-search{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-geral);
+}
+
 .pesquisa-rm{
     display: block;
 }
+
 
 .container-search{
     padding: 1rem 1rem;
@@ -21,8 +33,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
 
 .container-dados{
     margin: 0 0.5rem;
